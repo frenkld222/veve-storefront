@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --veve-pink: #ff4f9a;
+  --veve-gold: #d4af37;
+  --veve-black: #0a0a0b;
+}
+
+body{
+  background:
+    radial-gradient(1200px 1200px at 10% -10%, rgba(255,79,154,0.08), transparent 50%),
+    radial-gradient(900px 900px at 110% 0%, rgba(212,175,55,0.07), transparent 40%),
+    var(--veve-black);
+  color: #e5e7eb;
+}
+
+.veve-gold{ color: var(--veve-gold); }
+.veve-gold-bg{ background-color: var(--veve-gold); }
+.veve-pink{ color: var(--veve-pink); }
+
+.veve-btn{ @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-medium shadow-sm transition; }
+.veve-btn-primary{ @apply veve-btn; background: linear-gradient(90deg, #db2777, #be185d); }
+.veve-btn-outline{ @apply veve-btn border border-zinc-700 bg-black/40; }
+
+.card{ @apply rounded-3xl border border-zinc-800 bg-zinc-950/60; }
+.input{ @apply w-full rounded-xl border border-zinc-800 bg-zinc-900/60 px-3 py-2 outline-none; }
+.badge{ @apply inline-flex items-center rounded-full border px-2 py-0.5 text-xs; }
